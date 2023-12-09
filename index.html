@@ -5,33 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/4a24678c16.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="img-first-box">
-        <div class="nav-bar">
-            <h1 class="brand-name">Harshal Aglawe</h1>
-            <div class="Nav-name-box">
-                <a href="#">
-                    <div class="Nav-name">About</div>
-                </a>
-                <a href="#">
-                    <div class="Nav-name">Services</div>
-                </a>
-                <a href="#contact-us">
-                    <div class="Nav-name">Contact</div>
-                </a>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="brand-name">Harshal Aglawe</div>
+            <ul id="sideMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="head-text">
+            <h1>
+                Hi, I'm
+                <span style="color: #ff004f;">
+                    Harshal
+                </span>
+            </hi>
+            <p class="head-text-dis">I am currently a Bachelor student at<br> St. Vincent Pallotti College.</p>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./image/harshal-img.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi guys myself Harshal Aglawe. I am a Information Technology Engineering student at the St. Vincent Pallotti College of Engineering and Technology. I started my coding journey with C, and then learning Python and C++. Aspiring computer student with a passion for coding and problem-solving. Committed to continuous learning and adapting to emerging technologies.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>skills</span><br>Designing Web/App interfaces</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>education</span><br>Designing Web/App interfaces</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>certifications</span><br>Designing Web/App interfaces</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <p class="main-head">
-            Hi, I'm
-            <span style="color: #915eff;">
-                Harshal
-            </span>
-        </p>
-        <p class="main-head-text">I am currently a Bachelor student at<br> St. Vincent Pallotti College.</p>
     </div>
-    <br><br><br>
+</div>
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./image/img-2.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>I am a Information Technology Engineering student at the St. Vincent Pallotti College of Engineering and Technology.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./image/img-1.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>I am a Information Technology Engineering student at the St. Vincent Pallotti College of Engineering and Technology.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./image/img-3.jpg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>I am a Information Technology Engineering student at the St. Vincent Pallotti College of Engineering and Technology.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> harshalaglawe06@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +91 8010564317</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+                <a href="./image/img-1.jpg" download class="btn btn2">Downlode Cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 
     <section class="contact-us-box" id="contact-us">
@@ -83,6 +188,31 @@
             </div>
         </div>
     </section>
+
+
+    <script>
+        let tabLinks = document.getElementsByClassName("tab-links");
+        let tabContents = document.getElementsByClassName("tab-contents");
+        function opentab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        let sidemeu = document.getElementById("sideMenu");
+        function openMenu(){
+            sidemeu.style.right = "0";
+        }
+        function closeMenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
