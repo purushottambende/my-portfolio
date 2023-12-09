@@ -287,11 +287,11 @@ form .btn2:hover{
         background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url(./image/backgroung-img-small.jpg);;
     }
     .head-text{
-        margin-top: 30%;
+        margin-top: 35%;
         font-size: 16px;
     }
     .head-text h1{
-        font-size: 40px;
+        font-size: 45px;
     }
     .head-text h1 p{
         font-size: 20px;
