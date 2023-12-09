@@ -125,72 +125,20 @@
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2" onclick="alert('Message send successfully 👍')">Submit</button>
+                    <h2 style="text-align: center; margin-bottom: 40px;">GET IN TOUCH WITH ME</h2>
+                    <p class="inputBotext">Your name</p>
+                    <input type="text" name="Name" placeholder="What's your name" required>
+                    <p class="inputBotext">Your email</p>
+                    <input type="email" name="Email" placeholder="What's your email" required>
+                    <p class="inputBotext">Your message</p>
+                    <textarea name="Message" rows="6" placeholder="Lets talk about something"></textarea>
+                    <button type="submit" class="btn btn2">Send message</button>
                 </form>
                 <span id="msg"></span>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
-
-    <section class="contact-us-box" id="contact-us">
-        <div class="content-contact-us">
-            <h2 class="content-contact-us-head">Contact Us</h2>
-        </div>
-        <div class="contact-us-box-2">
-            <div class="contactInfo">
-                <div class="contactInfo-box">
-                    <div class="icon-contact">
-                        <img class="icon-contact-1" src="./image/icons8-address-60.png" alt="">
-                    </div>
-                    <div class="text">
-                        <p class="Harshal">Address</p>
-                        <p class="Harshal-text">At Tembhari, Post Rama,<br>Tah+Dist Nagpur- 441108</p>
-                    </div>
-                </div>
-                <div class="contactInfo-box">
-                    <div class="icon-contact">
-                        <img class="icon-contact-1" src="./image/icons8-phone-64.png" alt="">
-                    </div>
-                    <div class="text">
-                        <p class="Harshal">Pnone</p>
-                        <p class="Harshal-text">+91 8010564317</p>
-                    </div>
-                </div>
-                <div class="contactInfo-box">
-                    <div class="icon-contact">
-                        <img class="icon-contact-1" src="./image/icons8-email-50.png" alt="">
-                    </div>
-                    <div class="text">
-                        <p class="Harshal">Email</p>
-                        <p class="Harshal-text">harshalaglawe.22@stvincentngp.edu.in</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contactForm">
-                <h2 class="contactForm-head">GET IN TOUCH WITH ME</h2>
-                <div class="inputBox">
-                    <P class="inputBotext">Your name</P>
-                    <input type="text" placeholder="What's your name" class="int">
-                    <P class="inputBotext">Your email</P>
-                    <input type="email" placeholder="What's your email" required="" class="int">
-                    <P class="inputBotext">Your message</P>
-                    <input type="text" placeholder="Lets talk about something" required="" class="int"><br>
-                    <input type="button" onclick="alert('Your Message Send Successfully')" value="Send message"
-                        class="button-send">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <script>
         let tabLinks = document.getElementsByClassName("tab-links");
         let tabContents = document.getElementsByClassName("tab-contents");
@@ -223,6 +171,10 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
+                msg.innerHTML = "Message send successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
                 form.reset()
             })
             .catch(error => console.error('Error!', error.message))
