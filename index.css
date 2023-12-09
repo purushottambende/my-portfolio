@@ -242,7 +242,7 @@ nav ul li a:hover::after{
 }
 .contact-right{
     flex-basis: 50%;
-    border: 2px solid #ff004f;
+    border: 1px solid #ff004f;
     padding: 4%;
     border-radius: 10px;
 }
@@ -287,11 +287,14 @@ form .btn2:hover{
         background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url(./image/backgroung-img-small.jpg);;
     }
     .head-text{
-        margin-top: 100%;
+        margin-top: 20%;
         font-size: 16px;
     }
     .head-text h1{
         font-size: 30px;
+    }
+    .head-text h1 p{
+        font-size: 20px;
     }
     nav .fa-solid{
         display: block;
