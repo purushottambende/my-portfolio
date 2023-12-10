@@ -178,16 +178,19 @@ nav ul li a:hover::after{
     font-weight: bold;
     margin-bottom: 20px;
 }
-.layer a{
-    margin-top: 20px;
-    color: #ff004f;
+.layer span{
     text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
+}
+.layer span a i{
     background: #fff;
+    color: #ff004f;
+    height: 60px;
     width: 60px;
-    border-radius: 50%;
+    padding-top: 20px;
+    margin: 20px 10px;
     text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
 }
 .work:hover img{
     transform: scale(1.1);
@@ -220,6 +223,13 @@ nav ul li a:hover::after{
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
+}
+.contact-left p a{
+    color: #fff;
+    text-decoration: none;
+}
+.contact-left p a:hover{
+    color: #ff004f;
 }
 .social-icons{
     margin-top: 30px;
@@ -341,113 +351,3 @@ form .btn2:hover{
         flex-basis: 100%;
     }
 }
-
-.contact-us-box{
-    padding: 0px 120px;
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url(./image/info-img.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 70px;
-}
-.content-contact-us{
-    text-align: center;
-}
-.content-contact-us-head{
-    font-size: 50px;
-}
-.content-contact-us-text{
-    font-size: 20px;
-}
-.contact-us-box-2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.contactInfo-box{
-    margin-top: 35px;
-    display: flex;
-    flex-direction: row;
-    padding-left: 20%;
-}
-.icon-contact-1{
-    background-color: #100d25;
-    border-radius: 50%;
-    padding: 10px;
-    height: 50px;
-}
-.text{
-    display: block;
-    margin-left: 15px;
-}
-.contactInfo{
-    width: 400px;
-    padding:  40px;
-    font-family: Poppins,sans-serif;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-.contactForm{
-    width: 400px;
-    background-color: #100d25;
-    padding:  20px 40px;
-    font-family: Poppins,sans-serif;
-    border-radius: 20px;
-}
-.contactForm-head{
-    margin-bottom: 70px;
-}
-.inputBox{
-    font-family: Poppins,sans-serif;
-}
-.Harshal{
-    margin-bottom: 0px;
-    font-size: 18px;
-    font-weight: bold;
-}
-.Harshal-text{
-    margin-top: 8px;
-}
-.inputBotext{
-    font-weight: bold;
-    font-size: 18px;
-    font-family: Poppins,sans-serif;
-}
-
-.int{
-    margin-bottom: 30px;
-    font-family: Poppins,sans-serif;
-    font-weight: bold;
-    width:90%;
-    height: 50px;
-    font-size: large;
-    border: none;
-    background-color: #151030;
-    border-radius: 8px;
-    padding: 2px 20px;
-    color: white;
-}
-.button-send{
-    font-family: Poppins,sans-serif;
-    width: 50%;
-    background-color: #151030;
-    color: white;
-    font-weight: bold;
-    font-size: large;
-    cursor: pointer;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 1px 2px 5px 1px black;
-    
-}  
-.button-send:hover{
-    box-shadow: 1px 2px 10px 1px black;
-} 
