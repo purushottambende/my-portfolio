@@ -283,7 +283,7 @@ form input, form textarea{
 form .btn2{
     padding: 14px 50px;
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
     font-weight: bold;
 }
@@ -353,5 +353,9 @@ form .btn2:hover{
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
+    }
+    .contact-right{
+        padding: 0;
+        border: none;
     }
 }
