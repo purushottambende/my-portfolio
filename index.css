@@ -313,6 +313,7 @@ form .btn2:hover{
     nav .fa-solid{
         display: block;
         font-size: 25px;
+        cursor: pointer;
     }
     nav ul{
         background: #ff004f;
@@ -331,8 +332,8 @@ form .btn2:hover{
     }
     nav ul .fa-solid{
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 18px;
+        right: 40px;
         cursor: pointer;
     }
     .sub-title{
