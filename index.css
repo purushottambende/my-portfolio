@@ -347,4 +347,10 @@ nav ul li a:hover::after{
     .social-icons{
         margin: 0;
     }
+    .footer-box{
+        flex-direction: column;
+    }
+    .footer-box a{
+        text-align: center;
+    }
 }
