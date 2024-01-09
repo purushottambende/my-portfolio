@@ -232,23 +232,24 @@ nav ul li a:hover::after{
 }
 .main-contact{
     margin: 40px auto 20px;
-    width: 530px;
+    width: 500px;
     display: flex;
+    flex-wrap: wrap;
     padding: 20px 40px;
     justify-content: space-between;
     border: 1px solid #ff004f;
     border-radius: 10px;
 }
-.contact-container p i{
+.main-contact p i{
     color: #ff004f;
     margin-right: 10px;
     font-size: 25px;
 }
-.contact-container p a{
+.main-contact p a{
     color: #fff;
     text-decoration: none;
 }
-.contact-container p a:hover{
+.main-contact p a:hover{
     color: #ff004f;
 }
 .social-icons{
@@ -335,17 +336,20 @@ nav ul li a:hover::after{
         font-size: 40px;
         text-align: left;
     }
+    #contact{
+        padding: 0;
+    }
     .main-contact{
-        margin: 20px 0 20px -20px;
-        flex-direction: column;
+        margin: 0;
+        width: 300px;
         padding: 0;
         border: none;
     }
-    .contact-container p i{
-        margin: 20px;
+    .main-contact p{
+        margin-top: 30px;
     }
     .social-icons{
-        margin: 0;
+        margin: 30px 0;
     }
     .footer-box{
         flex-direction: column;
