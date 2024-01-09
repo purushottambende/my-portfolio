@@ -91,7 +91,6 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 50%;
-    padding: 50px 0;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -276,6 +275,7 @@ nav ul li a:hover::after{
     flex-direction: row;
     list-style: none;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .footer-box a{
     text-decoration: none;
@@ -289,7 +289,7 @@ nav ul li a:hover::after{
     transform: translateY(-5px);
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
     #header{
         background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url(./image/backgroung-img-small.jpg);;
     }
@@ -329,9 +329,6 @@ nav ul li a:hover::after{
         right: 40px;
         cursor: pointer;
     }
-    .about-col-1{
-        flex-basis: 100%;
-    }
     .sub-title{
         font-size: 40px;
         text-align: left;
@@ -351,10 +348,17 @@ nav ul li a:hover::after{
     .social-icons{
         margin: 30px 0;
     }
-    .footer-box{
-        flex-direction: column;
-    }
     .footer-box a{
         text-align: center;
     }
 }
+/*
+<div id="footer">
+        <ul class="footer-box">
+            <a href="#header">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </ul>
+    </div>
+    */
