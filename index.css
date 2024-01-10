@@ -80,6 +80,11 @@ nav ul li a:hover::after{
     padding: 80px 0;
     color: #ababab;
 }
+.about-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
 .row{
     display: flex;
     justify-content: space-between;
@@ -99,6 +104,7 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+    text-align: center;
 }
 .tab-titles{
     display: flex;
@@ -220,21 +226,24 @@ nav ul li a:hover::after{
 }
 
 .contact-left{
-    flex-basis: 35%;
+    flex-basis: 100%;
 }
-.contact-left p{
+.main-contact{
+    margin-left: auto;
+}
+.main-contact p{
     margin-top: 30px;
 }
-.contact-left p i{
+.main-contact p i{
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
-.contact-left p a{
+.main-contact p a{
     color: #fff;
     text-decoration: none;
 }
-.contact-left p a:hover{
+.main-contact p a:hover{
     color: #ff004f;
 }
 .social-icons{
@@ -251,51 +260,6 @@ nav ul li a:hover::after{
 .social-icons a:hover{
     color: #ff004f;
     transform: translateY(-5px);
-}
-.btn.btn2{
-    display: inline-block;
-    background: #ff004f;
-}
-.contact-right{
-    flex-basis: 50%;
-    border: 1px solid #ff004f;
-    padding: 4%;
-    border-radius: 10px;
-}
-.contact-right form{
-    width: 100%;
-}
-.inputBotext{
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: -10px;
-    margin-top: 10px;
-}
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-form .btn2{
-    padding: 14px 50px;
-    font-size: 18px;
-    margin-top: 10px;
-    cursor: pointer;
-    font-weight: bold;
-}
-form .btn2:hover{
-    background-color: #080808;
-}
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
 }
 
 @media screen and (max-width: 600px){
@@ -340,6 +304,11 @@ form .btn2:hover{
     }
     .sub-title{
         font-size: 40px;
+        text-align: left;
+    }
+    .about-title{
+        text-align: left;
+        font-size: 40px;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
@@ -354,11 +323,7 @@ form .btn2:hover{
         font-size: 16px;
         margin-right: 20px;
     }
-    .contact-left, .contact-right{
+    .contact-left{
         flex-basis: 100%;
-    }
-    .contact-right{
-        padding: 0;
-        border: none;
     }
 }
