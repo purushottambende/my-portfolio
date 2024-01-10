@@ -282,6 +282,23 @@ nav ul li a:hover::after{
     color: #ff004f;
     transform: translateY(-5px);
 }
+#footer{
+    margin: 50px;
+}
+.footer-nav{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px 300px;
+    border-top: 2px solid #ff004f;
+}
+.footer-nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
 
 @media screen and (max-width: 600px){
     #header{
@@ -346,5 +363,13 @@ nav ul li a:hover::after{
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
+    }
+    .footer-nav{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .footer-nav li{
+        margin-top: 20px;
     }
 }
